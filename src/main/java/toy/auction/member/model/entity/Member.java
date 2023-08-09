@@ -8,4 +8,6 @@ public class Member {
     private long phoneNumber;
     private String name;
 
+    private Integer point;
+
 }
