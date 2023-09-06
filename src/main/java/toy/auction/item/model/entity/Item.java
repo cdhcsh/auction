@@ -7,4 +7,11 @@ public class Item {
     private Long typeId;
 
     private Integer price;
+
+    public Item(Long id, String name, Long typeId, Integer price) {
+        this.id = id;
+        this.name = name;
+        this.typeId = typeId;
+        this.price = price;
+    }
 }
