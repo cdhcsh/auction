@@ -1,5 +1,7 @@
 package toy.auction.item.model.entity;
 
+import toy.auction.item.model.dto.ItemResponse;
+
 public class Item {
     //아이템 엔티티
     private Long id;
@@ -13,5 +15,8 @@ public class Item {
         this.name = name;
         this.typeId = typeId;
         this.price = price;
+    }
+    public ItemResponse from(){
+        return new ItemResponse(id, name, typeId, price);
     }
 }
